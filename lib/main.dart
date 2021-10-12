@@ -14,7 +14,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Shop app',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.purple,
+          accentColor: Colors.deepOrange,
+        ),
+        fontFamily: 'Lato',
       ),
       home: ProductsOverviewScreen(),
     );
